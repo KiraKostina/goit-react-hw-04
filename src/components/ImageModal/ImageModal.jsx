@@ -8,11 +8,10 @@ const customStyles = {
     bottom: 'auto',
     marginRight: '-50%',
     transform: 'translate(-50%, -50%)',
-    
   },
   overlay: {
     background: '#000000cd',
-  }
+  },
 };
 
 Modal.setAppElement('#root');
