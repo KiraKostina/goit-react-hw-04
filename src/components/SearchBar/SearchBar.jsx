@@ -18,6 +18,7 @@ export default function SearchBar({ onSearch }) {
       >
         <Form>
           <Field
+            className={css.search_field}
             type="text"
             name="query"
             autoComplete="off"
