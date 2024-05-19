@@ -8,11 +8,10 @@ export const getImages = async (searchWord, currentPage) => {
    
         const response = await axios.get("/search/photos", {
             params: {
+                client_id: API_KEY,
                 query: searchWord,
                 page: currentPage,
-                per_page: 15,
-                client_id: API_KEY,
-               
+                per_page: 12,
             },
         });
 

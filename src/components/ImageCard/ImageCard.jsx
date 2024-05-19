@@ -7,7 +7,7 @@ export default function ImageCard({ small, regular, description, onClick }) {
 
   return (
     <div>
-      <img src={small} alt={description} onClick={handleClick} />
+      <img className={css.gallery_image} src={small} alt={description} onClick={handleClick} />
     </div>
   );
 }

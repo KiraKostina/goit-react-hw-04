@@ -16,7 +16,7 @@ export default function SearchBar({ onSearch }) {
           actions.resetForm();
         }}
       >
-        <Form>
+        <Form className={css.search_panel}>
           <Field
             className={css.search_field}
             type="text"
@@ -25,7 +25,7 @@ export default function SearchBar({ onSearch }) {
             autoFocus
             placeholder="Search images and photos"
           ></Field>
-          <button type="submit">
+          <button className={css.searchBtn} type="submit">
             <GoSearch />
           </button>
           <Toaster position="top-right" reverseOrder={false} />
